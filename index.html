@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+
+
+        <link rel="shortcut icon" href="./img/favicon.ico">
+        <title>Team 0: ME210 W18</title>
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="./js/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/highlight.pack.js"></script>
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href=".">Team 0: ME210 W18</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#the-team-0-group-llc">The Team 0 Group, LLC</a></li>
+            <li><a href="#winners-of-the-2018-me210-mechatronics-bracket">Winners of the 2018 ME210 Mechatronics Bracket!</a></li>
+            <li><a href="#the-team-meet-the-members">The Team: Meet the Members</a></li>
+            <li><a href="#the-objective-game-play-and-rules">The Objective: Game-Play and Rules</a></li>
+            <li><a href="#the-evidence-competition-results">The Evidence: Competition Results</a></li>
+            <li><a href="#the-strategy-discussing-design-choices">The Strategy: Discussing Design Choices</a></li>
+            <li><a href="#the-takeaway-lessons-learned">The Takeaway: Lessons Learned</a></li>
+        <li class="main "><a href="#electrical-and-mechanical-design">Electrical and Mechanical Design</a></li>
+            <li><a href="#schematic">Schematic</a></li>
+            <li><a href="#teensy-pinout">Teensy Pinout</a></li>
+            <li><a href="#robot-subsystems">Robot Subsystems</a></li>
+            <li><a href="#bill-of-materials">Bill of Materials</a></li>
+        <li class="main "><a href="#software">Software</a></li>
+            <li><a href="#goals-and-philosophy">Goals and Philosophy</a></li>
+            <li><a href="#strategy-and-design-decisions">Strategy and Design Decisions</a></li>
+            <li><a href="#beginning-from-the-end">Beginning from the End</a></li>
+            <li><a href="#infrastructure">Infrastructure</a></li>
+            <li><a href="#hardware-libraries">Hardware Libraries</a></li>
+            <li><a href="#build-notes">Build Notes</a></li>
+            <li><a href="#code-download">Code Download</a></li>
+        <li class="main "><a href="#robot-fabrication">Robot Fabrication</a></li>
+            <li><a href="#system-layout-and-integration-using-3d-cad">System Layout and Integration using 3D CAD</a></li>
+            <li><a href="#manufacturing">Manufacturing</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="the-team-0-group-llc">The Team 0 Group, LLC</h1>
+<h3 id="winners-of-the-2018-me210-mechatronics-bracket"><em>Winners of the 2018 ME210 Mechatronics Bracket!</em></h3>
+<hr />
+<h2 id="the-team-meet-the-members">The Team: Meet the Members</h2>
+<p><img alt="" src="./s_6301046ACC59F1970FE5AB12F2EC89DBF659253BAD0E948384DBEE3CAAD33FD2_1521068390603_image.png" /></p>
+<p><strong>Joe Sunde</strong>         | Mechanical Engineering Co-term</p>
+<p><strong>Christopher Sauer</strong> | Computer Science Co-term</p>
+<p><strong>Shalini Ranmuthu</strong>  | Electrical Engineering Master’s</p>
+<p><strong>Kyle Feldmann</strong>     | Mechanical Engineering Co-term</p>
+<p><em>(from left)</em></p>
+<h2 id="the-objective-game-play-and-rules">The Objective: Game-Play and Rules</h2>
+<p>ME 210 is a course that gives students an opportunity to dive into the world of mechatronics (intelligent electro-mechanical design).  The course’s final assignment is a 3.5 week team project to create an autonomous bot that completes a series of tasks and can compete against the other 24 bots in the class.</p>
+<p>This year’s task was startup themed, the goal of the robot was to dispense balls (Buzzwords) into seesaw like boxes (Funding Rounds and Patent Offices) and to control at least two of them(A and B, or PO and B) to open the gate. Once the gate is open the bot can drive through and enter their opponent’s starting area (Startup Garage) and win the game (acquire the opponent).</p>
+<p>The robot can only carry 4 balls at a time and can only reload in the Incubator. The robot only has the walls, black and grey tape on the ground, and a series of IR beacons of different frequency and duty cycle to base its gameplay off of. The task must be completed in 2 minutes and 10 seconds, at which time the robots shut off and whoever has placed the most balls in the Funding Rounds wins.</p>
+<p><img alt="" src="./gameboard.png" /><br>
+<em>The Map of ‘Silicon Valley.’</em></p>
+<h2 id="the-evidence-competition-results">The Evidence: Competition Results</h2>
+<p><img alt="" src="./s_6301046ACC59F1970FE5AB12F2EC89DBF659253BAD0E948384DBEE3CAAD33FD2_1521069430597_IMG_1639.JPG" /><br>
+<em>Our robot, configured as in competition.</em></p>
+<p><img alt="" src="./s_6301046ACC59F1970FE5AB12F2EC89DBF659253BAD0E948384DBEE3CAAD33FD2_1521070473624_IMG_2068.JPG" /><br>
+<em>Victory in the bracket.</em></p>
+<h3 id="final-round">Final Round</h3>
+<p><video src="./20180311_191030.mp4" controls/></p>
+<h3 id="semi-final-round">Semi-Final Round</h3>
+<p><video src="./20180311_190637.mp4" controls/></p>
+<h3 id="quarter-final-round">Quarter-Final Round</h3>
+<p><video src="./20180311_190053.mp4" controls/></p>
+<h3 id="sweet-16-round">Sweet 16 Round</h3>
+<p><video src="./first_round.mp4" controls/></p>
+<h2 id="the-strategy-discussing-design-choices">The Strategy: Discussing Design Choices</h2>
+<p>The group set out from the start with the goal of not only meeting the minimum design requirements but also being competitive in the showcase at the end. While there is no grading benefit to winning, we wanted to have a robot the whole group was proud to share with the class and beyond Stanford. We quickly realized based on our motor selection from the free bin that one of the strengths of the robot was the available motor torque and speed. We knew it would drain power quickly, but provided we had enough power, we would be able to execute a strategy based on making quick maneuvers. Initial testing off a DC power source led us to decide to step down the gear ratio from the gear head slightly in our chain drive. We built a robot around coordinate motion to eliminate time lost in turning, and most importantly, we decided that using a line following strategy would be needlessly slow and instead opted for a physical wall following strategy. This decision had some major benefits. The first is that on a linked coordinate drive system any wander in the system (ie tendency to drive on a curve rather than line) is not correctable by the robot drive system. However, the walls of the course itself allow the edges of the robot to correct its trajectory if the cross drive provides some small amount of force holding the robot against the wall. This is perfect since the funding round bins are located against the wall. Instead of having to stop at each bin and advance from the tracking line, we could execute a “drive by” ball deposit strategy. The coordinate motion strategy also eliminated the need to execute a turn to get through the gate further reducing the cycle time for the robot. Wall tracking allows another benefit in that simple limit switches can be used for tracking the position of the robot. Unlike tape sensors with varying thresholds based on light conditions, tape color, and cracks, limit switches offer a very binary measure of whether the robot has found a limit of the board.</p>
+<p>After many close readings of the rules we decided on a competition strategy that included tipping Funding Round A (but not depositing any balls), depositing 3 balls into the Patent Office( ensuring that it would remain in our favor at least until the other team reloaded), and depositing a required 1 ball in Funding Round B while tipping it.</p>
+<p>We would repeat this process as many times as we felt would be entirely reliably, as occasionally we would count an extra line before Funding Round A or misfire a ball. We established that two runs through would be enough to ensure that we would have control of at least one of the rounds, so on our subsequent reloads we strategized to dispense 4 balls into the patent office to protect it, and only tip the Funding Rounds.</p>
+<p>With our speed and tipping power, we knew that no teams could beat us outright, and that we could tip 25 balls or more from the opponent's side, so we were not worried about teams who filled our Funding Round B only, and not worried about teams taking both A and B while we were reloading.</p>
+<p>This methodology differed crucially from our checkoff where we were required to deposit balls in A and B and tipping had no bearing.</p>
+<h2 id="the-takeaway-lessons-learned">The Takeaway: Lessons Learned</h2>
+<p>One of the pitfalls that is often an easy trap for engineers is the belief that because we have the tools to implement complex solutions these methods are the best way to solve a problem. Choosing simpler solutions early on that didn’t require lots of tuning increased reliability and preserved flexibility for the new challenges and strategies that came up once the game board was finalized.</p>
+<p>A perfect example of this is the implementation of threshold sensing using photo-transistors or more neatly tape sensors. In the lab we learned how to design and tune these systems using signal conditioning circuits and comparators with hysteresis. Having this immediate knowledge it is tempting to build a robot that only views its world through tape sensors and IR beacons. However, limit switches are incredibly reliable and provide a useful binary response that takes some threshold calibration to get from IR phototransistors. For a robot living in a world bounded by insurmountable walls, is it necessary to make use of this technology? Our answer we found was yes but to much less a degree than many teams chose. Our initial design included four or six tape sensors. What we quickly realized was that we could simply use one and still be much faster and more efficient than most designs that used several.</p>
+<p>A second major lesson was that friction in real systems can be a real wild card. A significant number of robots in the competition or in practice would seemingly get inexplicably grabbed by walls or cracks in the floor or turn unexpectedly. We experienced this the night before the competition testing some final lines of code. The robot would get hung up on the return to the incubator which we determined was because of a small piece of tape on the wall. To this end we found that for our wall following design, bearing casters on the face really helped provide a predictable response.</p>
+<p>There is often not one right answer, but at the end of the day, the team does need to make a decision and execute it well. For multiple components of the design there were competing design strategies. However, once the team decided on one, the whole group worked to implement it and continue designing from that point. Sometimes decisions you think are questionable at the beginning end up being much better than you thought. When multiple good options are available and there’s disagreement within the team, it’s critical to reach consensus and all commit to designing a single solution.</p>
+<p>Finally building something for a theoretical challenge is more difficult than building for what is in front of you. The late arrival of the game board forced us to make our best guesses about what to expect. One thing we did not account for was how close the beacons would be to the edge of the game board. We also could not predict exactly how the funding rounds would respond to a tipping force. As designers, we had to figure out how to build in flexibility in the physical robot itself and how we structured the code. Defining an architecture early on allowed changes at these later stages to be much simpler and less stressful.</p>
+<hr />
+<h1 id="electrical-and-mechanical-design">Electrical and Mechanical Design</h1>
+<hr />
+<h2 id="schematic">Schematic</h2>
+<h2 id="_1"></h2>
+<p><img alt="" src="./s_E8DA0198AE16ECDAFCD572EEA129675F74C249DD324F8F6D939B95B14281A52E_1521071091915_image.png" /><br>
+<em>Schematic for entire robot.</em></p>
+<h2 id="teensy-pinout">Teensy Pinout</h2>
+<table>
+<thead>
+<tr>
+<th>teensy PIN #</th>
+<th>teensy PIN type</th>
+<th>connecting PIN #</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>DIGITAL_OUT</td>
+<td>driver1 in1</td>
+<td>N/S motor+</td>
+</tr>
+<tr>
+<td>1</td>
+<td>DIGITAL_OUT</td>
+<td>driver1 in2</td>
+<td>N/S motor-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>DIGITAL_OUT</td>
+<td>driver1 in3</td>
+<td>E/W motor+</td>
+</tr>
+<tr>
+<td>3</td>
+<td>DIGITAL_OUT</td>
+<td>driver1 in4</td>
+<td>E/W motor-</td>
+</tr>
+<tr>
+<td>4</td>
+<td>PWM</td>
+<td>driver1 en1</td>
+<td>N/S motor</td>
+</tr>
+<tr>
+<td>5</td>
+<td>PWM</td>
+<td>driver1 en2</td>
+<td>E/W motor</td>
+</tr>
+<tr>
+<td>6</td>
+<td>DIGITAL_OUT</td>
+<td>driver2 in1</td>
+<td>ramp sol top</td>
+</tr>
+<tr>
+<td>7</td>
+<td>DIGITAL_OUT</td>
+<td>driver2 in2</td>
+<td>ramp sol bottom</td>
+</tr>
+<tr>
+<td>8</td>
+<td>DIGITAL_OUT</td>
+<td>driver2 in3</td>
+<td>tipper motor</td>
+</tr>
+<tr>
+<td>9</td>
+<td>DIGITAL_OUT</td>
+<td>driver2 in4</td>
+<td>tipper motor</td>
+</tr>
+<tr>
+<td>10</td>
+<td>PWM</td>
+<td>driver2 en2</td>
+<td>tipper motor</td>
+</tr>
+<tr>
+<td>11</td>
+<td>INPUT_PULLUP</td>
+<td>limit switch</td>
+<td>ramp switch top</td>
+</tr>
+<tr>
+<td>12</td>
+<td>INPUT_PULLUP</td>
+<td>limit switch</td>
+<td>ramp switch bottom</td>
+</tr>
+<tr>
+<td>14</td>
+<td>ANALOG_INPUT</td>
+<td>phototransistor</td>
+<td>tape sensor</td>
+</tr>
+<tr>
+<td>15</td>
+<td>INPUT_PULLUP</td>
+<td>limit switch N</td>
+<td>wall bumper</td>
+</tr>
+<tr>
+<td>16</td>
+<td>INPUT_PULLUP</td>
+<td>limit switch E</td>
+<td>reloading bumper</td>
+</tr>
+<tr>
+<td>17</td>
+<td>INPUT_PULLUP</td>
+<td>limit switch S</td>
+<td>start/back bumper</td>
+</tr>
+<tr>
+<td>18</td>
+<td>ANALOG_INPUT</td>
+<td>op-amp output</td>
+<td>beacon sensor</td>
+</tr>
+</tbody>
+</table>
+<h2 id="robot-subsystems">Robot Subsystems</h2>
+<h3 id="power-supply-and-drivers">Power Supply and Drivers</h3>
+<p>Power to the robot was provided by two Gens Ace 7.2V 3000mAh batteries connected in series to form the 14V supply (although actual voltage was slightly higher). A 15A breaker switch was placed in series with the power supply and functioned as an overall power switch. The power supply was connected to both of the L298N drivers, which are rated for at least a 35V supply. The L298N driver boards also have a built-in 5V voltage regulator, and one of these regulator outputs was used to power the Teensy, the tape sensing circuit, and the beacon sensing circuit. A 220uF bypass capacitor was used to stabilize the 5V power line.</p>
+<p>The L298N drivers themselves are dual H bridge motor drivers, which means that we could control 4 total motors with this setup. We ended up driving 2 wheel motors, 1 tipper arm motor, and 2 solenoids (8 total outputs) using 8 inputs and 4 enable lines (wired as shown in the schematic).</p>
+<h3 id="drivetrain">Drivetrain</h3>
+<p>We decided to have the robot execute coordinate movement instead of a more traditional isolated two wheel drive. Mechanically, we decided to use two motors with two full width drive axles mechanically linking the advance ratio of each set of drive wheels. We used omni-directional wheels to allow this type of drive system. One of the concerns early on with this system was making sure all wheels are uniformly in contact with the ground at all times to ensure the robot would drive in a straight orthogonal grid. We used a captive design to place pillars holding shoulder bushings and 4 mechanical supports per axle (two closely placed around each drive wheel) The accuracy and repeatability of CAD driven laser cutting allowed easy alignment of the bearing axes and ensuring that all four wheels would contact the ground well. We sized the drive wheels to be 4 inches on one axis and 3.25 inches on the other axis so that the axles could cross each other without interference. We prototyped the drivetrain train levels to confirm our design would work before continuing with the upper level design. Initially, there was enough tolerance variation that the axles would bind in the bushing, so the bearings were opened up a few thousandths of an inch to allow free rolling. The second deck of the robot was the integrated electronics and drive motor deck. This area was more accessible with more space and was thus easier to work in. The axles were connected through the deck with a chain drive system to the DC motors mounted on brackets on top of the second deck. The brackets were mounted in slots to allow proper chain tensioning after the chain was assembled.</p>
+<h3 id="wall-tracking">Wall Tracking</h3>
+<p>After being forewarned about the pitfalls of line sensing, we developed another motion sensing system for robust tracking. The wall tracking method consisted of three limit switches mounted to the lower level of the robot on the front, right and rear sides of our bot, in a way that when they are fully engaged the roller sits flush with the outside edge of the robot.</p>
+<p>We used wall tracking to trigger our interrupts, and to ensure that we were reaching our desired destinations for dropping balls, tipping, reloading, and finishing a round.</p>
+<h3 id="ball-dispensing">Ball Dispensing</h3>
+<p>From the start we focused on a simple, robust ball dispensing system. Our ball dispensing system used a pvc tube mounted to a vertical duron board. This tube has holes for a limit switch and a solenoid. The limit switch was used to sense if balls were loaded into the tube, and the solenoid to quickly and reliably dispense balls. The reason we decided to use a solenoid rather than a servo was that it allowed us to more quickly dispense balls while driving quickly, and gave us the ability to dispense one ball at a time if necessary.</p>
+<p>We also decided to have two separate ball dispensing systems so that we could selectively load balls depending on the desired functionality. While giving the robot information based on game events was not allowed in a rules update, our system let us load balls in a specific pattern so that we could dispense in different bins after each reload. We ended up using a strategy of dispensing 3 balls into the Patent Office and one into Funding Round B for the first two reloading cycles, and 4 into the Patent Office for each successive reloading cycle.</p>
+<p>We also used modified syringes to quickly reload our dispensing tubes cutting reloading time by about 1.5 seconds over hand-loading.</p>
+<h3 id="tape-sensing">Tape Sensing</h3>
+<p>We used tape sensing as a secondary sensing system to determine when we were in front of the funding rounds, patent office, or gate. We designed for enough room to integrate three sensors along the bottom of our robot along a threaded rod, but ended up only needing one on the left side of the robot to sense the grey tape marking the funding round locations and the tape marking the gate location. We decided to put the sensor on the left of the robot to give us time to drive and shoot near full speed.</p>
+<p>The tape sensor itself consists of the OP265 photodiode and the OP535 phototransistor. The diode drop was measured to be 1.16V. In order to limit the current through the diode to the recommended 40mA and account for some safety margin, we rounded the drop down to <script type="math/tex">1V</script>, leaving <script type="math/tex">5V-1V=4V</script> to drop in series with the LED. This resulted in a required resistance value of  <script type="math/tex">\frac{4V}{40mA} = 100\Omega</script>. From the OP535 datasheet current curves, we initially used a <script type="math/tex">1k\Omega</script> resistor in a sourcing configuration, but we found upon experimentation that a <script type="math/tex">10k\Omega</script> resistor gave a better range.</p>
+<p>The low-clearance skirt for our robot was able to block most light and our sensor remained in calibration for our purposes after a few initial calibration tests before checkoff.  The values from these calibration tests are shown in the table below. With the calibrated thresholds, we could detect the white game board as well as black, grey, and green tape. We also filtered out cracks and other small objects by sampling at least twice per grey tape width and then checking that we read two of the same tape color value sequentially before reacting to it.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Test Circuit Values (2/20/18)</th>
+<th>Actual Robot Readings (2/27/18)</th>
+<th>New Tape Sensor Position (3/2/18)</th>
+<th>Different Lighting (3/3/18)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>White (no tape)</td>
+<td>1023 (just above saturation. Measured as 3.34V)</td>
+<td>880</td>
+<td>560</td>
+<td>950</td>
+</tr>
+<tr>
+<td>Black</td>
+<td>125</td>
+<td>95</td>
+<td>50</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Grey</td>
+<td>400</td>
+<td>310</td>
+<td>160</td>
+<td>300</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>910</td>
+<td>480</td>
+<td>260</td>
+<td>690</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tipper-arm">Tipper Arm</h3>
+<p>After checking off the basic functionality of the robot, the team decided that the next highest priority for the robot was developing a tipping mechanism. The reasoning was that against a highly functional opponent, in increasingly later game states it would be difficult to regain control of funding rounds by simply dumping balls. In essence, the tipper is the game changer, we could not imagine robots without that level of functionality prevailing against robots with it. Our initial design ideations centered around dropping a weight on a reel or a servo driven “bow drill” poker that provided linear actuation not unlike fire starters of the paleolithic age. We quickly realized that both these strategies limited the speed of our robot through the funding rounds and we would have to make strategy decision: Do we drop balls and move quickly or do we stop to tip? Additionally, when would we know when to tip and how could we pick up the state of the beacon from the funding round before committing to a robot deceleration. These questions sent us back to the drawing board looking for a better solution.</p>
+<p>We thought about quick acting high energy sources for quick funding round tipping. Compressed springs or dynamic linkages could provide faster action but would prove complicated. Another idea occurred which was to use on board compressed air to blast a jet of air against the funding round. It wouldn’t be dangerous and violate the safety guidelines but it would provide a dynamic fast acting tipper that would allow drive by tipping along with ball dropping. We started experimenting with air in a can as even the low pressure delta could still provide a regulated choked flow at a pre-sized converging nozzle for air (k = 1.4 requires a minimum delta P of ~ 2) We quickly realized though that the available volume in these cans was fairly small, and the required mass flux was relatively high. We measured tipping force for the funding rounds around 300g and calculated that we would need a minimum nozzle orifice of .05 inch OD. The issue with this was that in testing 10 L allowed us to get 2-3 tips. Using a high pressure CO2 disposable cartridge we could easily get 10L for $2-3. It would be difficult to get more than 10 L in a hand-pumped air canister which we could feasibly get up to 150 psi. However, to get repeatable tips in a round we wanted more and thus started thinking about using refillable liquid CO2 canisters. We did some quick research and realized that this would not only be a hassle but was definitely outside the available funding range for the robot.</p>
+<p>The team went back to the drawing board a second time and came up with the idea of a “snow plow” tipper. This tipper would operate while driving and be able to bounce over the funding rounds applying a tipping impulse and bounce over the wall of the game board if necessary. The first conceptual version was a stiff steel spring mounted between two points that could be brought towards each other thus lowering the plow into tipping position. Through its compliance, it would be able to depress the funding rounds without causing damage to the robot. Finding the right spring material proved a challenge though so we switched to the idea of a weighted swing arm that could be pulled up by a non-backdriveable DC motor. At first the arm did not reach the funding bins so shims and an angled guide were used to get the arm to extend out further.</p>
+<h3 id="reloading-mechanisms">Reloading Mechanisms</h3>
+<p>Using a coordinate drive system allowed us to trigger the reload beacon by driving directly into it. The robot was able to register a reload through limit switches placed as obstructions at the entrance of each tube (switch would be triggered as balls passed through into the tube). In order to load the balls quickly, we fabricated custom ball loaders out of large plunger syringes. The end was modified to have a flap valve that allowed the balls to be pushed through. A fast reloading mechanism allowed the software to wait for a much shorter time before assuming reloading was complete.</p>
+<h3 id="beacon-sensing">Beacon Sensing</h3>
+<p>We decided that the easiest and fastest strategy would be to only read the beacon at the gate, and not have to worry about filtering in hardware (especially since the signals were square waves and not sinusoidal) or checking the frequency in software (would require some wait wait time) to separate and read the different beacon signals. This allowed us to just use an active high-pass filtering circuit (inverting topology) to remove DC interference as well as 60Hz noise from the overhead lights. We initially added a single phototransistor to the input of this filter in a sourcing configuration to sense the LED beacon. However, since each phototransistor has a fairly narrow field of view, we used 4 phototransistors connected in parallel and physically arranged to be facing slightly different angles but at the same height. This allowed us to repeatedly sense the gate beacon despite slight changes in the robot orientation. Since the gate beacon has the highest duty cycle frequency of 4125Hz and the next highest beacon is at 3500Hz, the filter was designed to have a cutoff frequency of <script type="math/tex">f_c = \frac{1}{2\pi R_1C} = \frac{1}{2\pi*470\Omega*0.1\mu F} \approx 3390 Hz</script>. The gain was set to <script type="math/tex">A = \frac{-R_2}{R_1} = \frac{-100k\Omega}{470\Omega} = -213 </script>.</p>
+<p>In order to avoid reading the frequency in software and also to smooth out sudden fluctuations in sensor readings, a 1uF capacitor was added as an integrator to the output of the active filter (which would affect the theoretical gain calculated above). We experimented with smaller capacitor values, but found the time constant was too small to effectively smooth out the duty cycle. The result of this design was that the input to the Teensy would now be a steady value that represented the average of the amplified duty cycle, instead of the duty cycled signal itself. When the beacon was on, this amplified average value would be around 1V whereas it would be close to 0.05V when the beacon was off. This simplified the software’s job to quickly reading an analog value, which it would then compare to some experimentally determined threshold value.</p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Part Name</th>
+<th>Part Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>4" Omni Wheel</td>
+<td>Vex 276-3525</td>
+</tr>
+<tr>
+<td>2</td>
+<td>3.25" Omni Wheel</td>
+<td>Vex 276-2185</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Planetary Gear 12 V DC Motor</td>
+<td>ServoCity638278</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1/4" Axle Machined</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Gens Ace 7.2V 3000mAh battery</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>3ft Chain</td>
+<td>.25" pitch</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Chain Connecting Links</td>
+<td>.25" pitch</td>
+</tr>
+<tr>
+<td>2</td>
+<td>16 Tooth Sprockets</td>
+<td>.25" pitch</td>
+</tr>
+<tr>
+<td>2</td>
+<td>23 Tooth Sprockets</td>
+<td>.25" pitch</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Bushing, flanged, 1/4" ID x 1/4" long</td>
+<td>McMaster3746K2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Collar, set screw, steel, 1/4"</td>
+<td>ServoCity 6432K12</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Solenoid</td>
+<td>Jameco 2202335</td>
+</tr>
+<tr>
+<td>2</td>
+<td>castor wheels</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Large threaded rod</td>
+<td>1/4-20</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Small Threaded Rods</td>
+<td>10-32</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Duron 18"x 24"</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>misc. small hardware</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>DC Motor from free bin</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Woodturned Pulley</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Welded steel tipping arm</td>
+<td>Stainless Steel</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Machined Tipping Arm Mount</td>
+<td>6061 Aluminum</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Machined PVC tubes</td>
+<td>1.25" PVC Tubing</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Zip ties</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Cotton String</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>15A Breaker</td>
+<td>1724R13A</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Teensy</td>
+<td>V3.2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Half Proto-Boards</td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Tape Sensor</td>
+<td>opb704wz</td>
+</tr>
+<tr>
+<td>2</td>
+<td>L298N motor driver</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>limit switches</td>
+<td>jameco 2187905</td>
+</tr>
+<tr>
+<td>50</td>
+<td>Stranded Wires</td>
+<td>as in schematic</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Capacitors</td>
+<td>as in schematic</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Resistors</td>
+<td>as in schematic</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Op-Amp</td>
+<td>LM324N</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Phototransisotrs</td>
+<td>LTR-3208E</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="software">Software</h1>
+<hr />
+<h2 id="goals-and-philosophy">Goals and Philosophy</h2>
+<p>Our software design philosophy was aligned with that for our mechanical and electrical design: Solve known challenges fast, while preserving the flexibility required to quickly address future challenges that arose as details about the game board and our competitors emerged.</p>
+<p>Since software is a more malleable medium than hardware, we knew we could take valuable architectural risks if we started early. Software also benefits from hierarchical abstractions; finding the right abstractions early would dramatically speed development later.</p>
+<h2 id="strategy-and-design-decisions">Strategy and Design Decisions</h2>
+<p>Thus, code development began early and in parallel with hardware. We built test circuits for each component and wrote quick code to drive them. Then, offline, we’d turn that test code into something robust and modular that would support all the functions we needed of that part of the robot.</p>
+<p>We knew early that we would need to have many logical threads of execution running in parallel. As an example, the robot would need to simultaneously: track the north wall, lower its tipper, deposit balls, count grey tape lines, and move left. Each would be driven by interrupts and run very quickly.</p>
+<p>Traditional threading was the wrong solution, even if Teensy Threads were available. Preemptive multitasking requires sophisticated concurrency control mechanisms and tends to leak state through abstractions.</p>
+<p>Cooperative multitasking was clearly a better and simpler solution. Since we’re running on a single-core system and each routine runs extremely quickly, it would save us from most concurrency-related bugs.  Teensy Fibers didn’t seem to provide the right interface around interrupts, so we settled on building our own interrupt-driven infrastructure.</p>
+<h2 id="beginning-from-the-end">Beginning from the End</h2>
+<p>It’s easiest to explain the abstractions we chose by starting with the final sketch we wrote. We’ll explain what properties we wanted it to have and then building upwards through the dependency graph of C++ libraries we wrote to support it.</p>
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "DriveMotor.hpp"
+#include "LaunchTube.hpp"
+#include "TapeSensor.hpp"
+#include "TipperMotor.hpp"
+
+static LaunchTube upperTube(6, 11, 1); //solenoid pin, switch pin, initial ball count
+static LaunchTube lowerTube(7, 12, 3);
+
+static DriveMotor xAxisMotor(2, 3, 5, true, 16); //out1 pin, out2 pin, en pin, direction, switch pin
+static DriveMotor yAxisMotor(0, 1, 4, false, 15, 17);
+
+static TipperMotor tipper(8, 9, 10, false); //out1 pin, out2 pin, en pin, direction
+
+static TapeSensor tapeSensor(14, 15000); //phototransistor pin, minimum microsec over a line
+static const uint32_t GATE_SENSOR_PIN = 18;
+
+static uint32_t startMillis = 0;
+
+static int greyCount = 0;
+static int greenCount = 0;
+
+void setup() {
+  // Init serial object.
+  Serial.begin(0); // Baud rate ignored. Teensy USB is always standard 12 Mbit/sec
+  analogWriteResolution(10); // Real resolution at this frequency.
+  pinMode(GATE_SENSOR_PIN, INPUT);
+  Serial.println("Booted");
+
+  yAxisMotor.notifyOnNextNegativeLimitPress([]() {
+    startMillis = millis();     // Stop play at 2:10
+    primaryPass();
+    Serial.println("Started");
+  });
+}
+
+static void primaryPass() {
+  xAxisMotor.timedMove(-1023, 0.4*1000000, []() {
+    yAxisMotor.moveToLimit(400, []() {  //go @ 400 power until we hit wall track switch
+      tipper.down();
+      xAxisMotor.move(-420);
+      yAxisMotor.trackPositiveLimit(400);
+      greyCount = 0;
+      tapeSensor.observeGrey([]() {
+        greyCount++;
+
+        if (greyCount == 1) { //hit first grey line
+          xAxisMotor.timedMove(0, 0.8*1000000, []() {
+            xAxisMotor.move(-340);
+          });
+        } else if (greyCount == 2) { //hit second grey line
+          xAxisMotor.stop();
+          lowerTube.dumpBallsPresent([]() {
+            xAxisMotor.move(-370);
+          });
+        } else if (greyCount == 3) {  //hit third grey line
+          upperTube.dumpBallsPresent([]() {});
+          tapeSensor.stopObserving();
+          thirdGreyToGateAttempt();
+        }
+      });
+    });
+  });
+}
+
+static void thirdGreyToGateAttempt() {
+  yAxisMotor.stopTrackingPositiveLimit(); // Stop hugging wall to avoid turning
+  xAxisMotor.timedMove(0, 1.5*1000000, []() {
+    tipper.up();
+    xAxisMotor.move(-400); //not full speed so you don't slam into wall by the gate
+    tapeSensor.observeBlack([]() {  //hit black line in front of gate
+      tapeSensor.stopObserving();
+
+      xAxisMotor.stop();
+
+      if (gateOpen()) {
+        // Sprint until we've won, then slowly drive through to the wall.
+        yAxisMotor.move(1023);
+        greenCount = 0;
+        tapeSensor.observeGreen([]() {
+          greenCount++;
+          if (greenCount == 2) {
+            yAxisMotor.moveToLimit(300, []() {
+              // We've won!
+              disableAll();
+            });
+          }
+        });
+      } else {
+        moveToReload();
+      }
+    });
+  });
+}
+
+static void moveToReload() {
+  // Timed sprint toward South wall
+  yAxisMotor.timedMove(-1023, 0.4*1000000, []() {
+    // Finish moving South
+    yAxisMotor.moveToLimit(-500, []() {
+      // Pull away from South wall to reduce friction
+      yAxisMotor.timedMove(400, 0.6*1000000, [](){});
+
+      // Timed sprint toward East wall
+      xAxisMotor.timedMove(1023, 3.1*1000000, [](){ //~3.5
+        // Finish moving East and stay there
+        xAxisMotor.moveToLimit(500, []() {
+          xAxisMotor.timedMove(1023, 0.05*1000000, [](){}); // back off just a bit
+
+          // Go up and hit the button.
+          yAxisMotor.trackPositiveLimit(600);
+          // wait for reload, then continue
+          lowerTube.notifyOnNextLoad([](){
+            yAxisMotor.stopTrackingPositiveLimit();
+            xAxisMotor.stopTrackingPositiveLimit();
+            secondaryPass();
+          });
+        });
+      });
+    });
+  });
+}
+
+static void secondaryPass() {
+  // Reset against round wall
+  yAxisMotor.timedMove(-400, 0.3*1000000, [](){});
+  xAxisMotor.timedMove(-1023, 1.0*1000000, [](){
+    yAxisMotor.moveToLimit(400, [](){
+      tipper.down();
+      yAxisMotor.trackPositiveLimit(400);
+      xAxisMotor.move(-1023);
+
+      greyCount = 0;
+      tapeSensor.observeGrey([]() {
+        greyCount++;
+
+        if (greyCount == 1) { //hit first grey line
+          xAxisMotor.timedMove(0, 0.8*1000000, []() {
+            xAxisMotor.move(-340);
+          });
+        } else if (greyCount == 2) { //hit second grey line
+          xAxisMotor.stop();
+          lowerTube.dumpBallsPresent([]() {
+            xAxisMotor.move(upperTube.hasBalls() ? -370 : -1023);
+          });
+        } else if (greyCount == 3) {  //hit third grey line
+          if (upperTube.hasBalls()) {
+            upperTube.dumpBallsPresent([]() {
+              tapeSensor.stopObserving();
+              thirdGreyToGateAttempt();
+            });
+          } else {
+            tapeSensor.stopObserving();
+            thirdGreyToGateAttempt();
+          }
+        }
+      });
+    });
+  });
+}
+
+static bool gateOpen() {
+  Serial.print("Gate says: "); Serial.println(analogRead(GATE_SENSOR_PIN));
+  // return false;
+  return analogRead(GATE_SENSOR_PIN) &gt; 15;
+}
+
+static void disableAll() {
+   Serial.println("Disabled");
+   upperTube.disable();
+   lowerTube.disable();
+   tapeSensor.stopObserving();
+   xAxisMotor.disable();
+   yAxisMotor.disable();
+   tipper.disable();
+}
+
+void loop() {
+  if (startMillis != 0 &amp;&amp; millis() &gt; startMillis + (2*60 + 10) * 1000) {
+    disableAll();
+    startMillis = 0;
+  }
+  Serial.println("*"); delay(500);
+}
+</code></pre>
+<p>Blocking code would have been extremely problematic given the concurrent and interrupt-driven requirements of the program. But you’ll notice that the program reads (and writes!) almost as easily as blocking code would. You declare sequentially all the things you want to happen at the same time—since the processor operates so fast compared to physical world time—and declare the things you want to happen when the operation completes inside of completion handler. If you’ve ever programmed for iOS, Grand Central Dispatch is somewhat similar. The callbacks are handled as C++11 lambdas, which turn code into a callable object with associated data.</p>
+<p>Further, at the top level, everything is semantic. You declare what you want done—move in the positive x direction for z seconds—and the implementation is handled by the libraries.</p>
+<h3 id="our-libraries-for-controlling-are-as-follows">Our libraries for controlling are as follows:</h3>
+<ul>
+<li><strong>TapeSensor</strong>: Manages de-noising tape crossings and notifying the main program</li>
+<li><strong>DriveMotor</strong>: Controls a motor and its interaction with the limit switches tracking its position. Two instances, one for each coordinate axis.</li>
+<li><strong>LaunchTube</strong>: Manages launching balls, counting the number of balls loaded, and notifying the main program on reload. Two instances, one for each physical tube.</li>
+<li><strong>TipperMotor</strong>: Manages raising and lowering the tipper arm asynchronously.</li>
+</ul>
+<h3 id="theyre-supported-by-the-following-abstractions-around-timers-and-interrupts">They’re supported by the following abstractions around timers and interrupts:</h3>
+<ul>
+<li><strong>LambdaInterrupt</strong>: Modifies interrupts on digital pins to dispatch to lambdas instead of function pointers, as in Arduino’s implementation.</li>
+<li><strong>DebouncedInterrupt</strong>: A version of the above that has a maximum firing frequency, easily adjustable in software.</li>
+<li><strong>LambdaTimer</strong>: IntervalTimer modified to call lambdas. Dynamically allocates itself onto one of the 4 hardware timers.</li>
+<li><strong>DispatchAfter</strong>: Uses a LambdaTimer to call you back once after a certain interval has elapsed. Then deallocated the timer.</li>
+<li><strong>MissingSystemFunctions</strong>: Fools the C++ standard libraries to link by faking like we’re running on an OS.</li>
+</ul>
+<p>You’ll also see some other code in the main sketch. We implemented gate sensing directly in there because it was so few lines that it didn’t merit an abstraction boundary. When interrupts aren’t driving the code, the main loop prints out asterisks as a heartbeat to let us know that the program is still running. Without a debugger, that’s the only easy way to know if our function-pointer shenanigans had crashed the program. Finally you’ll notice that we implemented the kill timer by polling. We don’t like it either, but it’s too long for the hardware timers, and it’s just using up whatever spare processing power isn’t consumed by the interrupts.</p>
+<h2 id="infrastructure">Infrastructure</h2>
+<p>In order to understand how the higher level abstractions work, we first have to talk through the lower level ones.</p>
+<h3 id="lambdainterrupt">LambdaInterrupt</h3>
+<p>The first obstacle is that Arduino’s interrupt handling makes building object-oriented abstractions on top of it impossible. Since it only calls back function pointers, it can’t associate data with the calls. That means it can’t call back an instance of a class, which means you can’t wrap logic you want to instantiate multiple off in a class. This is really bad.</p>
+<p>Here’s a solution, where we wrap Arduino’s interrupt dispatch to make it call lambdas.</p>
+<p>The syntax is a little obtuse, but basically we’re just making a giant bank of functions that we always point the interrupts to. These functions just route the call to out std::function from a lookup table.</p>
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#pragma once
+
+#include &lt;functional&gt;
+
+// Wrapper of Teensy Interrupts to support binding state with c++11 lambdas.
+// You need this functionality to be able to wrap interrupt calls inide of a class.
+// (You'll be much happier using this interface than looking at the implementation)
+
+namespace LambdaInterrupt {
+        // Assumes you've already set the pinmode
+        void attach(uint8_t pin, uint8_t event_type, std::function&lt;void()&gt; callback);
+        void detatch(uint8_t pin);
+};
+</code></pre>
+<!-- codebreak -->
+
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "LambdaInterrupt.hpp"
+
+#include &lt;Arduino.h&gt;
+
+// General stratedy: Define a fixed size block of functions, one per pin.
+// Those functions just dispatch the incoming call to the requested callback.
+
+namespace LambdaInterrupt {
+
+        static std::function&lt;void()&gt; callbacks[24]; // From user
+
+// Begin: Dispatch table code
+#define DISPATCH_FN_FACTORY(n) static void _isr_dispatch_##n() { callbacks[n](); }
+        DISPATCH_FN_FACTORY(0) DISPATCH_FN_FACTORY(1) DISPATCH_FN_FACTORY(2)
+        DISPATCH_FN_FACTORY(3) DISPATCH_FN_FACTORY(4) DISPATCH_FN_FACTORY(5)
+        DISPATCH_FN_FACTORY(6) DISPATCH_FN_FACTORY(7) DISPATCH_FN_FACTORY(8)
+        DISPATCH_FN_FACTORY(9) DISPATCH_FN_FACTORY(10) DISPATCH_FN_FACTORY(11)
+        DISPATCH_FN_FACTORY(12) DISPATCH_FN_FACTORY(13) DISPATCH_FN_FACTORY(14)
+        DISPATCH_FN_FACTORY(15) DISPATCH_FN_FACTORY(16) DISPATCH_FN_FACTORY(17)
+        DISPATCH_FN_FACTORY(18) DISPATCH_FN_FACTORY(19) DISPATCH_FN_FACTORY(20)
+        DISPATCH_FN_FACTORY(21) DISPATCH_FN_FACTORY(22) DISPATCH_FN_FACTORY(23)
+#undef DISPATCH_FN_FACTORY
+
+        static void (*isr_dispatch_table[])() = {
+                _isr_dispatch_0, _isr_dispatch_1, _isr_dispatch_2,
+                _isr_dispatch_3, _isr_dispatch_4, _isr_dispatch_5,
+                _isr_dispatch_6, _isr_dispatch_7, _isr_dispatch_8,
+                _isr_dispatch_9, _isr_dispatch_10, _isr_dispatch_11,
+                _isr_dispatch_12, _isr_dispatch_13, _isr_dispatch_14,
+                _isr_dispatch_15, _isr_dispatch_16, _isr_dispatch_17,
+                _isr_dispatch_18, _isr_dispatch_19, _isr_dispatch_20,
+                _isr_dispatch_21, _isr_dispatch_22, _isr_dispatch_23
+        };
+// End: Dispatch table code
+
+        void attach(uint8_t pin, uint8_t event_type, std::function&lt;void()&gt; callback) {
+                callbacks[pin] = callback;
+                attachInterrupt(digitalPinToInterrupt(pin), isr_dispatch_table[pin], event_type);
+        }
+
+        void detatch(uint8_t pin) {
+                detachInterrupt(digitalPinToInterrupt(pin));
+        }
+};
+</code></pre>
+<h3 id="debouncedinterrupt">DebouncedInterrupt</h3>
+<p>We’ll then wrap the above to have a maximum firing frequency, easily adjustable in software. This increases our development speed, because it saves having to build filters and hysteresis circuits.</p>
+<p>It works by storing the last call time and suppressing callbacks that occur too quickly after the first one.</p>
+<p>We wrote this class primarily for counting balls going into the launch tubes.</p>
+<pre><code>#pragma once
+//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "DispatchAfter.hpp"
+
+class DebouncedInterrupt {
+public:
+        // Usage example for an even that could happen at most 4 times a second:
+        // DebouncedInterrupt(10, INPUT_PULLUP, FALLING, 250000 /*us*/, [this]() {
+        //         // Respond to event.
+        // });
+        DebouncedInterrupt(uint8_t pin, uint8_t pinmode, uint8_t event_type, uint32_t min_period /*us*/, std::function&lt;void()&gt; callback);
+        ~DebouncedInterrupt();
+
+        // For detecting after a debounced burst has finished.
+        void dispatchAfterBurstFinish(uint32_t max_time_between_triggers, std::function&lt;void()&gt; callback);
+
+        // Stops you getting callbacks on this pin.
+        void disable();
+
+private:
+        DispatchAfter burst_finish;
+        std::function&lt;void()&gt; burst_callback;
+        uint32_t max_time_between_triggers;
+
+        const uint8_t pin;
+        const std::function&lt;void()&gt; callback;
+        const uint32_t min_period;
+        uint32_t last_fire;
+        bool active;
+};
+</code></pre>
+<!-- codebreak -->
+
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+
+#include "DebouncedInterrupt.hpp"
+
+#include "LambdaInterrupt.hpp"
+
+#include &lt;Arduino.h&gt;
+
+
+DebouncedInterrupt::DebouncedInterrupt(uint8_t pin, uint8_t pinmode, uint8_t event_type, uint32_t min_period, std::function&lt;void()&gt; callback) :
+        pin(pin),
+        callback(callback),
+        min_period(min_period),
+        last_fire(0),
+        active(true)
+{
+        pinMode(pin, pinmode);
+        LambdaInterrupt::attach(pin, event_type, [this]() {
+                uint32_t curr_time = micros();
+                if (curr_time - last_fire &gt;= this-&gt;min_period) {
+                        last_fire = curr_time;
+                        if (burst_callback) {
+                                // schedules for the first time or reschedules into the future
+                                burst_finish.schedule(max_time_between_triggers, [this]() {
+                                        burst_callback();
+                                        burst_callback = [](){};
+                                });
+                        }
+                        this-&gt;callback();
+                }
+        });
+}
+
+DebouncedInterrupt::~DebouncedInterrupt() {
+        disable();
+}
+
+void DebouncedInterrupt::dispatchAfterBurstFinish(uint32_t max_time_between_triggers, std::function&lt;void()&gt; callback) {
+        this-&gt;max_time_between_triggers = max_time_between_triggers;
+        this-&gt;burst_callback = callback;
+}
+
+void DebouncedInterrupt::disable() {
+        if (active) {
+                burst_finish.cancel();
+                LambdaInterrupt::detatch(pin);
+                active = false;
+        }
+}
+</code></pre>
+<h3 id="lambdatimer">LambdaTimer</h3>
+<p>For the same reasons we needed to modify attachInterrupt, we need to change IntervalTimer modified to call lambdas. Here’s a modified version of IntervalTimer. As with the original, it dynamically allocates itself onto one of the 4 hardware timers.</p>
+<p>The trickiness in the code is in not deallocating lambdas while they’re running. A naive implementation would delete running lambdas if they descheduled themselves while running—especially if they reallocated another lambda in their place. This leads to really nasty bugs. Instead, we defer deallocation of internal resources until after the lambda call has ended.</p>
+<pre><code>#pragma once
+//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+// Modernized by Christopher Sauer on 2/24/2018 to take lambdas instead of fnptrs
+
+/* Teensyduino Core Library
+ * http://www.pjrc.com/teensy/
+ * Copyright (c) 2017 PJRC.COM, LLC.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ *
+ * 1. The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * 2. If the Software is incorporated into a build system that allows
+ * selection among a list of target devices, then similar target
+ * devices manufactured by PJRC.COM must be included in the list of
+ * target devices and selectable in the same manner.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+#include "kinetis.h"
+
+#include &lt;functional&gt;
+
+class LambdaTimer {
+private:
+        static const uint32_t MAX_PERIOD = UINT32_MAX / (F_BUS / 1000000.0);
+public:
+        LambdaTimer();
+        ~LambdaTimer();
+
+        bool active();
+
+        bool begin(uint32_t microseconds, std::function&lt;void()&gt; callback);
+        void update(uint32_t microseconds);
+
+        void end();
+        void priority(uint8_t n);
+        operator IRQ_NUMBER_t();
+
+private:
+        friend void pit_isr();
+        friend void pit0_isr();
+        friend void pit1_isr();
+        friend void pit2_isr();
+        friend void pit3_isr();
+        void deallocResources();
+
+        KINETISK_PIT_CHANNEL_t *channel;
+        uint8_t nvic_priority;
+        #if defined(KINETISL)
+        static uint8_t nvic_priorites[2];
+        #endif
+        bool beginCycles(uint32_t cycles, std::function&lt;void()&gt; callback);
+};
+</code></pre>
+<!-- codebreak -->
+
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+// Modernized by Christopher Sauer on 2/24/2018 to take lambdas instead of fnptrs
+
+/* Teensyduino Core Library
+ * http://www.pjrc.com/teensy/
+ * Copyright (c) 2017 PJRC.COM, LLC.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of this software and associated documentation files (the
+ * "Software"), to deal in the Software without restriction, including
+ * without limitation the rights to use, copy, modify, merge, publish,
+ * distribute, sublicense, and/or sell copies of the Software, and to
+ * permit persons to whom the Software is furnished to do so, subject to
+ * the following conditions:
+ *
+ * 1. The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ *
+ * 2. If the Software is incorporated into a build system that allows
+ * selection among a list of target devices, then similar target
+ * devices manufactured by PJRC.COM must be included in the list of
+ * target devices and selectable in the same manner.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+#include "LambdaTimer.hpp"
+
+#include &lt;Arduino.h&gt;
+
+#if defined(KINETISK)
+#define NUM_CHANNELS 4
+
+#elif defined(KINETISL)
+#define NUM_CHANNELS 2
+uint8_t LambdaTimer::nvic_priorites[2] = {255, 255};
+#endif
+
+static std::function&lt;void()&gt; funct_table[NUM_CHANNELS];
+static LambdaTimer* dealloc_on_exit[NUM_CHANNELS] = {nullptr};
+
+LambdaTimer::LambdaTimer() {
+        channel = nullptr;
+        nvic_priority = 128;
+}
+
+LambdaTimer::~LambdaTimer() {
+        deallocResources();
+}
+
+bool LambdaTimer::active() {
+        const int index = channel - KINETISK_PIT_CHANNELS;
+        return channel != nullptr &amp;&amp; dealloc_on_exit[index] == false;
+}
+
+bool LambdaTimer::begin(uint32_t microseconds, std::function&lt;void()&gt; callback) {
+        if (microseconds == 0 || microseconds &gt; MAX_PERIOD)
+                return false;
+        uint32_t cycles = (F_BUS / 1000000) * microseconds - 1;
+        if (cycles &lt; 36) return false;
+        return beginCycles(cycles, callback);
+}
+
+void LambdaTimer::update(uint32_t microseconds) {
+        if (microseconds == 0 || microseconds &gt; MAX_PERIOD) return;
+        uint32_t cycles = (F_BUS / 1000000) * microseconds - 1;
+        if (cycles &lt; 36) return;
+        if (channel) channel-&gt;LDVAL = cycles;
+}
+
+bool LambdaTimer::beginCycles(uint32_t cycles, std::function&lt;void()&gt; callback)
+{
+        if (channel) {
+                channel-&gt;TCTRL = 0;
+                channel-&gt;TFLG = 1;
+        } else {
+                SIM_SCGC6 |= SIM_SCGC6_PIT;
+                __asm__ volatile("nop"); // solves timing problem on Teensy 3.5
+                PIT_MCR = 1;
+                channel = KINETISK_PIT_CHANNELS;
+                while (1) {
+                        if (channel-&gt;TCTRL == 0) break;
+                        if (++channel &gt;= KINETISK_PIT_CHANNELS + NUM_CHANNELS) {
+                                Serial.println("Out of timers");
+                                channel = nullptr;
+                                return false;
+                        }
+                }
+        }
+        int index = channel - KINETISK_PIT_CHANNELS;
+        dealloc_on_exit[index] = nullptr;
+        funct_table[index] = callback;
+        channel-&gt;LDVAL = cycles;
+        channel-&gt;TCTRL = 3;
+#if defined(KINETISK)
+        NVIC_SET_PRIORITY(IRQ_PIT_CH0 + index, nvic_priority);
+        NVIC_ENABLE_IRQ(IRQ_PIT_CH0 + index);
+#elif defined(KINETISL)
+        nvic_priorites[index] = nvic_priority;
+        if (nvic_priorites[0] &lt;= nvic_priorites[1]) {
+                NVIC_SET_PRIORITY(IRQ_PIT, nvic_priorites[0]);
+        } else {
+                NVIC_SET_PRIORITY(IRQ_PIT, nvic_priorites[1]);
+        }
+        NVIC_ENABLE_IRQ(IRQ_PIT);
+#endif
+        Serial.print("Allocating timer"); Serial.println(index);
+        return true;
+}
+
+void LambdaTimer::end() {
+        if (channel) {
+                const int index = channel - KINETISK_PIT_CHANNELS;
+                dealloc_on_exit[index] = this;
+        }
+}
+
+void LambdaTimer::deallocResources() {
+        if (channel) {
+                int index = channel - KINETISK_PIT_CHANNELS;
+                Serial.print("Deallocating timer"); Serial.println(index);
+#if defined(KINETISK)
+                NVIC_DISABLE_IRQ(IRQ_PIT_CH0 + index);
+#elif defined(KINETISL)
+                // TODO: disable IRQ_PIT, but only if both instances ended
+#endif
+                funct_table[index] = std::function&lt;void()&gt;();
+                channel-&gt;TCTRL = 0;
+#if defined(KINETISL)
+                nvic_priorites[index] = 255;
+                if (nvic_priorites[0] &lt;= nvic_priorites[1]) {
+                        NVIC_SET_PRIORITY(IRQ_PIT, nvic_priorites[0]);
+                } else {
+                        NVIC_SET_PRIORITY(IRQ_PIT, nvic_priorites[1]);
+                }
+#endif
+                channel = nullptr;
+        }
+}
+
+void LambdaTimer::priority(uint8_t n) {
+        nvic_priority = n;
+        #if defined(KINETISK)
+        if (channel) {
+                int index = channel - KINETISK_PIT_CHANNELS;
+                NVIC_SET_PRIORITY(IRQ_PIT_CH0 + index, nvic_priority);
+        }
+        #elif defined(KINETISL)
+        if (channel) {
+                int index = channel - KINETISK_PIT_CHANNELS;
+                nvic_priorites[index] = nvic_priority;
+                if (nvic_priorites[0] &lt;= nvic_priorites[1]) {
+                        NVIC_SET_PRIORITY(IRQ_PIT, nvic_priorites[0]);
+                } else {
+                        NVIC_SET_PRIORITY(IRQ_PIT, nvic_priorites[1]);
+                }
+        }
+        #endif
+}
+
+LambdaTimer::operator IRQ_NUMBER_t() {
+        if (channel) {
+                #if defined(KINETISK)
+                int index = channel - KINETISK_PIT_CHANNELS;
+                return (IRQ_NUMBER_t)(IRQ_PIT_CH0 + index);
+                #elif defined(KINETISL)
+                return IRQ_PIT;
+                #endif
+        }
+        return (IRQ_NUMBER_t)NVIC_NUM_INTERRUPTS;
+}
+
+#if defined(KINETISK)
+void pit0_isr()
+{
+        PIT_TFLG0 = 1;
+        if (funct_table[0] &amp;&amp; !dealloc_on_exit[0])
+                funct_table[0]();
+        if (dealloc_on_exit[0]) {
+                dealloc_on_exit[0]-&gt;deallocResources();
+                dealloc_on_exit[0] = nullptr;
+        }
+}
+
+void pit1_isr() {
+        PIT_TFLG1 = 1;
+        if (funct_table[1] &amp;&amp; !dealloc_on_exit[1])
+                funct_table[1]();
+        if (dealloc_on_exit[1]) {
+                dealloc_on_exit[1]-&gt;deallocResources();
+                dealloc_on_exit[1] = nullptr;
+        }
+}
+
+void pit2_isr() {
+        PIT_TFLG2 = 1;
+        if (funct_table[2] &amp;&amp; !dealloc_on_exit[2])
+                funct_table[2]();
+        if (dealloc_on_exit[2]) {
+                dealloc_on_exit[2]-&gt;deallocResources();
+                dealloc_on_exit[2] = nullptr;
+        }
+}
+
+void pit3_isr() {
+        PIT_TFLG3 = 1;
+        if (funct_table[3] &amp;&amp; !dealloc_on_exit[3])
+                funct_table[3]();
+        if (dealloc_on_exit[3]) {
+                dealloc_on_exit[3]-&gt;deallocResources();
+                dealloc_on_exit[3] = nullptr;
+        }
+}
+
+#elif defined(KINETISL)
+void pit_isr() {
+        if (PIT_TFLG0) {
+                PIT_TFLG0 = 1;
+                if (funct_table[0])
+                        funct_table[0]();
+        }
+        if (PIT_TFLG1) {
+                PIT_TFLG1 = 1;
+                if (funct_table[1])
+                        funct_table[1]();
+        }
+}
+#endif
+</code></pre>
+<h3 id="dispatchafter">DispatchAfter</h3>
+<p>This is a wrapper around a LambdaTimer that calls you back once after a certain interval has elapsed and hen deallocated the timer. It’s simple code, but saves having to do manual deallocation over and over.</p>
+<pre><code>#pragma once
+//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "LambdaTimer.hpp"
+
+class DispatchAfter{
+public:
+        void schedule(uint32_t microseconds, std::function&lt;void()&gt; callback);
+
+        void cancel();
+private:
+        LambdaTimer timer;
+};
+</code></pre>
+<!-- codebreak -->
+
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+
+#include "DispatchAfter.hpp"
+
+#include &lt;Arduino.h&gt;
+
+
+void DispatchAfter::schedule(uint32_t microseconds, std::function&lt;void()&gt; callback) {
+        bool success = timer.begin(microseconds, [this, callback]() {
+                callback();
+            timer.end();
+        });
+        if (!success) {
+                Serial.println("Timer Failed.");
+        }
+}
+
+void DispatchAfter::cancel() {
+        timer.end();
+}
+</code></pre>
+<h3 id="missingsystemfunctions">MissingSystemFunctions</h3>
+<p>The C++ standard libraries are designed to run on an OS. We can’t get our program to link unless we have some basic functions those libraries assume. This code fakes like our bare metal code running on an OS.</p>
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include &lt;Arduino.h&gt;
+
+// Add in stdlib's missing dependencies.
+// These functions are thing's the code would expect on an OS, but we're
+// running bare metal.
+
+extern "C" { // no name mangling
+
+        // No processes, so no killing...
+        int _kill(int pid, int sig) {
+                Serial.printf("Process %d sent signal %d.", pid, sig);
+                return -1; // Error, since we can't kill.
+        }
+
+        // There is only one process...with ID 1!
+        int _getpid() {
+                return 1;
+        }
+
+        // Ah...life without a file system.
+        int _write() {
+                return -1;
+        }
+}
+</code></pre>
+<h2 id="hardware-libraries">Hardware Libraries</h2>
+<p>With all that infrastructure built, it’s much easier to build clean abstractions for each hardware subsystem of our robot. Here are the implementations:</p>
+<h3 id="tapesensor">TapeSensor</h3>
+<p>This class manages notifying the main program of when various colors of tape are crossed. It also manages (and hides) de-noising crossings of things like cracks and skid marks that mar the course. It does so via an easily adjustable tight upper bound on the time taken to cross a tape line.</p>
+<pre><code>#pragma once
+//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "LambdaTimer.hpp"
+
+class TapeSensor {
+public:
+        TapeSensor(uint8_t analog_input_pin, uint32_t min_crossing_duration);
+
+        void observeBlack(std::function&lt;void()&gt; on_black);
+        void observeGrey(std::function&lt;void()&gt; on_grey);
+        void observeGreen(std::function&lt;void()&gt; on_green);
+
+        void stopObserving();
+
+private:
+        void startTimerIfNeeded();
+
+        enum class Tape { UNKNOWN, WHITE, BLACK, GREY, GREEN };
+        Tape last_seen, last_last_seen;
+
+        const uint8_t analog_input_pin;
+        const uint32_t timer_duration;
+
+        LambdaTimer sensor_poll_timer;
+        std::function&lt;void()&gt; on_black;
+        std::function&lt;void()&gt; on_grey;
+        std::function&lt;void()&gt; on_green;
+        bool black_active, grey_active, green_active;
+};
+</code></pre>
+<!-- codebreak -->
+
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+
+#include "TapeSensor.hpp"
+
+#include &lt;Arduino.h&gt;
+
+
+TapeSensor::TapeSensor(uint8_t analog_input_pin, uint32_t min_crossing_duration) :
+last_seen(Tape::UNKNOWN),
+last_last_seen(Tape::UNKNOWN),
+analog_input_pin(analog_input_pin),
+timer_duration(min_crossing_duration/2), // So we're guaranteed to get 2 samples on it.
+black_active(false), grey_active(false), green_active(false)
+{
+        pinMode(analog_input_pin, INPUT);
+}
+
+void TapeSensor::observeBlack(std::function&lt;void()&gt; on_black) {
+        this-&gt;on_black = on_black;
+        black_active = true;
+        startTimerIfNeeded();
+}
+
+void TapeSensor::observeGrey(std::function&lt;void()&gt; on_grey) {
+        this-&gt;on_grey = on_grey;
+        grey_active = true;
+        startTimerIfNeeded();
+}
+
+void TapeSensor::observeGreen(std::function&lt;void()&gt; on_green) {
+        this-&gt;on_green = on_green;
+        green_active = true;
+        startTimerIfNeeded();
+}
+
+void TapeSensor::stopObserving() {
+        sensor_poll_timer.end();
+        last_seen = Tape::UNKNOWN;
+        last_last_seen = Tape::UNKNOWN;
+
+        black_active = grey_active = green_active = false;
+}
+
+void TapeSensor::startTimerIfNeeded() {
+        if (!sensor_poll_timer.active()) {
+                sensor_poll_timer.begin(timer_duration, [this] {
+                        static const uint16_t WHITE_GREEN_THRESH = 825;
+                        static const uint16_t GREEN_GREY_THRESH = 500; //below crack thresh
+                        static const uint16_t GREY_BLACK_THRESH = 200;
+
+                        uint16_t reading = analogRead(analog_input_pin);
+                    // Serial.print(reading); Serial.print("\t"); Serial.println(black_active);
+
+                        Tape seen = Tape::WHITE;
+                        if (reading &lt; GREY_BLACK_THRESH) {
+                                seen = Tape::BLACK;
+                        } else if (reading &lt; GREEN_GREY_THRESH) {
+                                seen = Tape::GREY;
+                        } else if (reading &lt; WHITE_GREEN_THRESH) {
+                                seen = Tape::GREEN;
+                        }
+
+                        if (last_last_seen != last_seen &amp;&amp; last_seen == seen) {
+                                if (seen == Tape::BLACK &amp;&amp; black_active) {
+                                        on_black();
+                                        Serial.println("Seen black");
+                                } else if (seen == Tape::GREY &amp;&amp; grey_active) {
+                                        on_grey();
+                                        Serial.println("Seen grey");
+                                } else if (seen == Tape::GREEN &amp;&amp; green_active) {
+                                        on_green();
+                                        Serial.println("Seen green");
+                                }
+                        }
+
+                        last_last_seen = last_seen;
+                        last_seen = seen;
+                });
+        }
+}
+</code></pre>
+<h3 id="drivemotor">DriveMotor</h3>
+<p>This class controls a motor and its interaction with the limit switches tracking its position. It provides a lot of the tracking and stopping primitives that make the main code so simple.</p>
+<pre><code>#pragma once
+//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "DispatchAfter.hpp"
+
+// Limit switch is considered the positive direction of motion.
+// Set polarity to make that so.
+
+class DriveMotor {
+public:
+        DriveMotor(uint8_t bridge_pin_1, uint8_t bridge_pin_2, uint8_t enable_pin_pwm, bool polarity, uint8_t limit_switch_pin, uint8_t negative_limit_switch_pin = -1);
+
+        void timedMove(int directional_speed, uint32_t duration_micros, std::function&lt;void()&gt; completionHandler);
+        void moveToLimit(int speed, std::function&lt;void()&gt; completionHandler);
+
+        void trackPositiveLimit(int speed);
+        void stopTrackingPositiveLimit();
+
+        void notifyOnNextNegativeLimitPress(std::function&lt;void()&gt; pressed);
+
+        void move(int directional_speed);
+        void stop();
+
+        // Call me on 2:10 timer expiring.
+        void disable();
+
+private:
+        bool enabled;
+
+        const uint8_t bridge_pin_1;
+        const uint8_t bridge_pin_2;
+        const uint8_t enable_pin_pwm;
+        const bool polarity;
+        const uint8_t limit_switch_pin;
+        const uint8_t negative_limit_switch_pin;
+
+        DispatchAfter stop_dispatch;
+};
+</code></pre>
+<!-- codebreak -->
+
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "DriveMotor.hpp"
+#include "LambdaInterrupt.hpp"
+
+#include &lt;Arduino.h&gt;
+
+
+DriveMotor::DriveMotor(uint8_t bridge_pin_1, uint8_t bridge_pin_2, uint8_t enable_pin_pwm, bool polarity, uint8_t limit_switch_pin, uint8_t negative_limit_switch_pin) :
+enabled(true),
+bridge_pin_1(bridge_pin_1),
+bridge_pin_2(bridge_pin_2),
+enable_pin_pwm(enable_pin_pwm),
+polarity(polarity),
+limit_switch_pin(limit_switch_pin),
+negative_limit_switch_pin(negative_limit_switch_pin)
+{
+        pinMode(bridge_pin_1, OUTPUT);
+        pinMode(bridge_pin_2, OUTPUT);
+        pinMode(enable_pin_pwm, OUTPUT);
+        stop();
+        pinMode(limit_switch_pin, INPUT_PULLUP);
+        if (negative_limit_switch_pin &gt;= 0)
+                pinMode(negative_limit_switch_pin, INPUT_PULLUP);
+}
+
+void DriveMotor::timedMove(int directional_speed, uint32_t duration_micros, std::function&lt;void()&gt; completionHandler) {
+        move(directional_speed);
+        stop_dispatch.schedule(duration_micros, [this, completionHandler]() {
+                stop();
+                completionHandler();
+        });
+}
+
+void DriveMotor::notifyOnNextNegativeLimitPress(std::function&lt;void()&gt; pressed) {
+        LambdaInterrupt::attach(negative_limit_switch_pin, FALLING, [this, pressed] () {
+                LambdaInterrupt::detatch(negative_limit_switch_pin);
+                pressed();
+        });
+}
+
+void DriveMotor::moveToLimit(int speed, std::function&lt;void()&gt; completionHandler) {
+        uint8_t limit_pin = limit_switch_pin;
+
+        if (speed &lt; 0) {
+                if (negative_limit_switch_pin &lt; 0) {
+                        Serial.println("Attempt to use negative limit without a negative limit switch configured.");
+                        completionHandler();
+                        return;
+                }
+
+                limit_pin = negative_limit_switch_pin;
+        }
+
+        if (digitalRead(limit_pin) == LOW) {
+                completionHandler();
+        } else {
+                move(speed);
+                LambdaInterrupt::attach(limit_pin, FALLING, [this, completionHandler, limit_pin] () {
+                        LambdaInterrupt::detatch(limit_pin);
+                        stop();
+                        completionHandler();
+                });
+        }
+}
+
+void DriveMotor::trackPositiveLimit(int speed) {
+        if (speed &lt; 0)
+                speed = -speed;
+
+        move(speed);
+        LambdaInterrupt::attach(limit_switch_pin, CHANGE, [this, speed] () {
+                if (digitalRead(limit_switch_pin) == HIGH) {
+                        move(speed);
+                } else {
+                        stop();
+                }
+        });
+}
+
+void DriveMotor::stopTrackingPositiveLimit() {
+        stop();
+        LambdaInterrupt::detatch(limit_switch_pin);
+}
+
+void DriveMotor::disable() {
+        stopTrackingPositiveLimit();
+        stop_dispatch.cancel();
+        stop();
+        enabled = false;
+}
+
+void DriveMotor::move(int directional_speed) {
+        if (!enabled) return;
+
+        if (polarity)
+                directional_speed = -directional_speed;
+
+        if (directional_speed &gt; 0) {
+                digitalWrite(bridge_pin_1, HIGH);
+                digitalWrite(bridge_pin_2, LOW);
+        } else {
+                digitalWrite(bridge_pin_1, LOW);
+                digitalWrite(bridge_pin_2, HIGH);
+                directional_speed = -directional_speed; //abs
+        }
+
+        analogWrite(enable_pin_pwm, directional_speed);
+}
+
+void DriveMotor::stop() {
+        analogWrite(enable_pin_pwm, 0);
+}
+</code></pre>
+<h3 id="launchtube">LaunchTube</h3>
+<p>This class manages launching balls, counting the number of balls loaded, and notifying the main program on reload. We instantiate it twice, one for each physical tube.</p>
+<pre><code>#pragma once
+//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "DebouncedInterrupt.hpp"
+#include "DispatchAfter.hpp"
+
+// Handles all the work associated with managing a launch tube.
+// (debouncing, initialization, resetting solenoids, etc.)
+// Just sit back and enjoy the interface.
+
+// Note: Class assumes it will not be destructed for the lifetime of the program.
+
+class LaunchTube {
+public:
+        LaunchTube(uint8_t solenoid_pin, uint8_t limit_switch_pin, uint8_t starting_balls);
+
+        void dumpBallsPresent(std::function&lt;void()&gt; completionHandler);
+        void dumpOneBallPresent(std::function&lt;void()&gt; completionHandler);
+
+        void notifyOnNextLoad(std::function&lt;void()&gt; loaded);
+
+        bool hasBalls();
+
+        // Call me on timer expiring.
+        void disable();
+
+private:
+        void dumpNBallsPresent(int nBalls, std::function&lt;void()&gt; completionHandler);
+        void solenoidIn();
+        void solenoidOut();
+
+        bool enabled;
+        DispatchAfter solenoid_shutoff;
+        const uint8_t solenoid_pin;
+        int num_balls;
+        DebouncedInterrupt limit_switch_notifier;
+};
+</code></pre>
+<!-- codebreak -->
+
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "LaunchTube.hpp"
+
+#include &lt;Arduino.h&gt;
+
+static int calcDispenseTime(int numBalls) {
+  static const int INTERCEPT = 80000; // Add some safety margin
+  static const int SLOPE = 50000;
+  return SLOPE*numBalls + INTERCEPT;
+}
+
+
+LaunchTube::LaunchTube(uint8_t solenoid_pin, uint8_t limit_switch_pin, uint8_t starting_balls) :
+        enabled(true),
+        solenoid_pin(solenoid_pin),
+        num_balls(starting_balls),
+        limit_switch_notifier(limit_switch_pin, INPUT_PULLUP, FALLING, 60000 /*us*/, [this]() {
+                num_balls++;
+        })
+{
+        pinMode(solenoid_pin, OUTPUT);
+        solenoidOut();
+}
+
+void LaunchTube::dumpNBallsPresent(int nBalls, std::function&lt;void()&gt; completionHandler) {
+        if (!enabled) return;
+
+        if (num_balls == 0){
+                completionHandler();
+        } else {
+                solenoidIn();
+                solenoid_shutoff.schedule(calcDispenseTime(nBalls), [this, completionHandler]() {
+                        solenoidOut();
+                        completionHandler();
+                });
+            num_balls -= nBalls;
+        }
+}
+
+void LaunchTube::dumpBallsPresent(std::function&lt;void()&gt; completionHandler) {
+        dumpNBallsPresent(num_balls, completionHandler);
+}
+
+void LaunchTube::dumpOneBallPresent(std::function&lt;void()&gt; completionHandler) {
+        dumpNBallsPresent(1, completionHandler);
+}
+
+void LaunchTube::notifyOnNextLoad(std::function&lt;void()&gt; loaded) {
+        limit_switch_notifier.dispatchAfterBurstFinish(0.3*1000000, loaded);
+}
+
+bool LaunchTube::hasBalls() {
+        return num_balls &gt; 0;
+}
+
+void LaunchTube::disable() {
+        limit_switch_notifier.disable();
+        enabled = false;
+        // Solenoids will get automatically relaxed as time expires.
+        // That way the robot will cease all action at the timer
+        // including stopping, except as to save power.
+}
+
+void LaunchTube::solenoidIn() {
+        digitalWrite(solenoid_pin, HIGH);
+}
+
+void LaunchTube::solenoidOut() {
+        digitalWrite(solenoid_pin, LOW);
+}
+</code></pre>
+<h3 id="tippermotor">TipperMotor</h3>
+<p>This class manages raising and lowering the tipper arm asynchronously, which we do with a simple timer and stall. There’s a double timer backing off raising the tipper so the spring force doesn't cause the tipper to bounce back away from the top limit.</p>
+<pre><code>#pragma once
+//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+#include "DispatchAfter.hpp"
+
+class TipperMotor {
+public:
+        TipperMotor(uint8_t bridge_pin_1, uint8_t bridge_pin_2, uint8_t enable_pin_pwm, bool polarity);
+
+        void up();
+        void down();
+
+        // Call me on 2:10 timer expiring.
+        void disable();
+
+private:
+        void move(int directional_speed);
+        void stop();
+
+        bool enabled;
+
+        const uint8_t bridge_pin_1;
+        const uint8_t bridge_pin_2;
+        const uint8_t enable_pin_pwm;
+        const bool polarity;
+
+        DispatchAfter stop_dispatch, hold_dispatch;
+};
+</code></pre>
+<!-- codebreak -->
+
+<pre><code>//             __  _________   ___  _______
+//            /  |/  / ____/  |__ \&lt;  / __ \
+//           / /|_/ / __/     __/ // / / / /
+//          / /  / / /___    / __// / /_/ /
+//        _///__/_/_____/   /____/_/\___//__
+//       /_  __/__  ____ _____ ___     / __ \
+//        / / / _ \/ __ `/ __ `__ \   / / / /
+//       / / /  __/ /_/ / / / / / /  / /_/ /
+//      /_/  \___/\__,_/_/ /_/ /_/   \____/
+//
+//            Don't be first. Be zeroth.
+//       (c) Kyle, Shalini, Christopher, Joe
+
+
+#include "TipperMotor.hpp"
+
+#include &lt;Arduino.h&gt;
+
+
+TipperMotor::TipperMotor(uint8_t bridge_pin_1, uint8_t bridge_pin_2, uint8_t enable_pin_pwm, bool polarity) :
+bridge_pin_1(bridge_pin_1),
+bridge_pin_2(bridge_pin_2),
+enable_pin_pwm(enable_pin_pwm),
+polarity(polarity)
+{
+        pinMode(bridge_pin_1, OUTPUT);
+        pinMode(bridge_pin_2, OUTPUT);
+        pinMode(enable_pin_pwm, OUTPUT);
+        stop();
+}
+
+void TipperMotor::up() {
+        move(1023);
+        stop_dispatch.schedule(1*1000000, [this]() {
+                move(100);
+                hold_dispatch.schedule(1.5*1000000, [this]() {
+                        stop();
+                });
+        });
+}
+
+void TipperMotor::down() {
+        move(-1023);
+        stop_dispatch.schedule(0.48*1000000, [this]() {
+                stop();
+        });
+}
+
+void TipperMotor::disable() {
+        stop_dispatch.cancel();
+        stop();
+}
+
+void TipperMotor::move(int directional_speed) {
+        if (polarity)
+                directional_speed = -directional_speed;
+
+        if (directional_speed &gt; 0) {
+                digitalWrite(bridge_pin_1, HIGH);
+                digitalWrite(bridge_pin_2, LOW);
+        } else {
+                digitalWrite(bridge_pin_1, LOW);
+                digitalWrite(bridge_pin_2, HIGH);
+                directional_speed = -directional_speed; //abs
+        }
+
+        analogWrite(enable_pin_pwm, directional_speed);
+}
+
+void TipperMotor::stop() {
+        analogWrite(enable_pin_pwm, 0);
+}
+</code></pre>
+<h2 id="build-notes">Build Notes</h2>
+<p>If you want to compile the above code, there are some changes you need to make to the Arduino environment.</p>
+<p>We need to link against the C++ standard libraries for the lambdas in our interrupt driven code. Link against it like so:</p>
+<p>On macOS, open terminal and run:</p>
+<pre><code>open /Applications/Arduino.app/Contents/Java/hardware/teensy/avr/boards.txt
+</code></pre>
+<p>Equivalent windows path:</p>
+<pre><code>C:\Program Files (x86)\Arduino\hardware\teensy\avr\boards.txt
+</code></pre>
+<p>Change</p>
+<pre><code>teensy31.build.flags.libs=-larm_cortexM4l_math -lm
+</code></pre>
+<p>to</p>
+<pre><code>teensy31.build.flags.libs=-lstdc++ -larm_cortexM4l_math -lm
+</code></pre>
+<p>You (of course) need to have installed Teensy’s dev environment inside of Arduino.</p>
+<p>Within it, do not turn on link-time optimization (LTO). There is a bug that invalidates lambdas.
+Tools→Optimize should be set to “Fastest”. If that’s taking up too much program memory, switch to “Smallest” for a dramatic reduction on program size.</p>
+<h2 id="code-download">Code Download</h2>
+<p>The full, zipped sketch can be downloaded <a href="./compete.zip">here</a>.</p>
+<hr />
+<h1 id="robot-fabrication">Robot Fabrication</h1>
+<hr />
+<h2 id="system-layout-and-integration-using-3d-cad">System Layout and Integration using 3D CAD</h2>
+<p><video src="./MASTER%20ASSEM%20%28Converted%29.mov" controls/></p>
+<p>The robot was structured around a three tiered system. We first decided to do a single global layout file to dictate locations for all the elements of the system. This ensured that from the start we could prevent interferences that are often the downfall of semi-complex integrated systems. From this master file, we were able to break out individual parts using an interlocking tab design for laser cutting. The standoffs that hold the drive axles are captive between the first and second deck which are clamped with threaded rods. Working from the ground up, we integrated a skirt to prevent debris on the game board from interfering with the drive system. In between the first and second decks of the robot, we placed the mechanical drive system. The second deck had the motors and gearheads placed closely to two motor driver modules, tape sensor, beacon circuit and limit switches through internal built in wiring pass throughs in the deck. Mounting points were integrated in the CAD model to create laser cut parts that were easy to assemble.</p>
+<p>We put clean wire layout as an important design consideration opting for ribbon bales and tape tie downs throughout the robot. The teensy was placed in the center and connected to the motor driver modules. The level also supported a brace for the ball depositing mechanism and solenoid mounts. The batteries were placed such that they would counter the mass of the motors and provide a roughly centered center of gravity. The third and highest deck supported the upper side of the solenoid mounts and ball depositing system as well as the tipper drive and beacon sensing system.</p>
+<img alt="" src="./s_E38CE18CEB47CCC3AB28493B9A1C53FAB402DDC653CB91C813F7F291AC9D8D89_1519802139694_Screen+Shot+2018-02-27+at+11.13.13+096PM.png" style="width: 40% !important"/>
+<img alt="" src="./s_E38CE18CEB47CCC3AB28493B9A1C53FAB402DDC653CB91C813F7F291AC9D8D89_1519802139816_Screen+Shot+2018-02-27+at+11.11.15+841PM.png" style="width: 40% !important"/><br>
+<p><img alt="" src="./s_E38CE18CEB47CCC3AB28493B9A1C53FAB402DDC653CB91C813F7F291AC9D8D89_1519802139767_Screen+Shot+2018-02-27+at+11.14.20+639PM.png" style="width: 40% !important"/>
+<br><em>CAD master layout.</em></p>
+<h3 id="drive-deck">Drive deck</h3>
+<p><img alt="" src="./s_D5B8930E9BA758ECE8B47D7CC25FFAE97EED4F16402F79FDB35F326435F1DF10_1521065927853_IMG_2971.jpg" /><br>
+<em>Collars prevent axial motion of the drive system which prevents the wheels and gears from rubbing on the chassis.</em></p>
+<p><img alt="" src="./s_D5B8930E9BA758ECE8B47D7CC25FFAE97EED4F16402F79FDB35F326435F1DF10_1521065954141_IMG_2975.jpg" /><br>
+<em>Cut outs in the bottom allow the wheels and gears more space and make tightening set screws easier during assembly.</em></p>
+<h3 id="electrical-system-deck">Electrical system deck</h3>
+<p><img alt="" src="./s_D5B8930E9BA758ECE8B47D7CC25FFAE97EED4F16402F79FDB35F326435F1DF10_1521065980474_IMG_2972.jpg" /><br>
+<em>The e-stop is easily accessible from the side. Side by side pins were routed to side by side pins on the teensy for clean wiring.</em></p>
+<p><img alt="" src="./s_D5B8930E9BA758ECE8B47D7CC25FFAE97EED4F16402F79FDB35F326435F1DF10_1521065999423_IMG_2976.jpg" /><br>
+<em>Drive motor and gearhead offer a 51:1 reduction.</em></p>
+<p><img alt="" src="./s_D5B8930E9BA758ECE8B47D7CC25FFAE97EED4F16402F79FDB35F326435F1DF10_1521066011744_IMG_2973.jpg" /><br>
+<em>The solenoids are held captive in vertical members and locked in place using a nut.</em></p>
+<h3 id="top-deck">Top deck</h3>
+<p><img alt="" src="./s_D5B8930E9BA758ECE8B47D7CC25FFAE97EED4F16402F79FDB35F326435F1DF10_1521066036525_IMG_2974.jpg" /><br>
+<em>Green tape holding together a cracked gear housing. The free bin is always a mixed bag.</em></p>
+<h2 id="manufacturing">Manufacturing</h2>
+<p><img alt="" src="./s_6301046ACC59F1970FE5AB12F2EC89DBF659253BAD0E948384DBEE3CAAD33FD2_1521138217407_IMG_8165.JPG" /><br>
+<em>Front view shows base construction, welded tipping arm, machined ball tubes, and laser-cut duron layers.</em></p>
+<p>While the base and support structure were a relatively standard threaded rod and lasercut duron approach, we used more advanced manufacturing strategies for our tipping mechanism and ball dispensing mechanism to ensure reliability.</p>
+<p>The ball dispensing tubes have machined slots and holes in precise locations, so that the limit switches and solenoids sat reliably in place for proper actuation. Our alignment pins for these tubes were out of spec, so the tubes moved slightly, causing the solenoids to bind and the limit switches to not trigger; however, we were able to fix this by realigning and locking the tubes in place.</p>
+<p>The tipper arm was the most difficult manufacturing challenge on our robot, and was the most fun to create. Do to the 12” cubic bounding box defined by the project and the amount of force we wanted from the arm, we decided to make it out of steel and aluminum. The arm was a welded steel lever that had a thickened plate at the tip for consistent tipping, and holes for a hinge and pulley string. When discussing welding Chris, wanted to weld so we taught him how and he welded the final tipper arm.  Additionally, we formed the spring for the arm out of 1/16” spring steel wire, machined the aluminum attachment bracket, turned and machined angled washers for angle adjustment, wood turned the pulley and formed the two brackets for ensuring proper extension and retraction of the arm. Using a variety of processes, we were able to explore our interests and solve problems not easily fixed by a laser cutter. These reliable and robust systems allowed us to run the robot for 5-10 rounds before rechecking all the critical functions using a ‘pit stop’ checklist, and only using a short pre-round checkoff list each time.</p></div>
+        </div>
+
+        <script>var base_url = '.';</script>
+        <script src="./js/base.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="./search/require.js"></script>
+        <script src="./search/search.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&larr;</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>&rarr;</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 0.17.3
+Build Date UTC : 2018-03-16 03:22:14
+-->
